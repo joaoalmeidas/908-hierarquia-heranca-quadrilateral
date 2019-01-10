@@ -40,4 +40,9 @@ public class Trapezio extends Quadrilateral {
 		
 	}
 	
+	public double calculaArea() {
+		
+		return ((encontraBaseMaior() + encontraBaseMenor()) * calculaAltura())/2;
+				
+	}
 }
