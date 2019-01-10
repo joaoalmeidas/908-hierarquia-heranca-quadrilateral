@@ -31,4 +31,11 @@ public class Ponto {
 		this.y = y;
 	}
 	
+	public void alteraPonto(int x, int y) {
+		
+		setX(x);
+		setY(y);
+		
+	}
+	
 }
