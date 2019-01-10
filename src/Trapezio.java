@@ -45,4 +45,14 @@ public class Trapezio extends Quadrilateral {
 		return ((encontraBaseMaior() + encontraBaseMenor()) * calculaAltura())/2;
 				
 	}
+	
+	@Override
+	public String toString() {
+		
+		return String.format("Altura do Trapezio: " +calculaAltura()+
+							"\nBase Maior do Trapezio: " +encontraBaseMaior()+
+							"\nBase Menot do Trapezio: " +encontraBaseMenor()+
+							"\n\nArea do Trapezio: "+calculaArea());
+		
+	}
 }
