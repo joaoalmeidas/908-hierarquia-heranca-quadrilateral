@@ -13,6 +13,17 @@ public class QuadrilateroTeste {
 		System.out.println("Trapezio\n");
 		
 		System.out.println(trap);
+		
+		a.alteraPonto(1, 6);
+		b.alteraPonto(5, 6);
+		c.alteraPonto(4, 0);
+		d.alteraPonto(0, 0);
+		
+		Paralelograma par = new Paralelograma(a, b, c, d);
+		
+		System.out.println("\nParalelograma\n");
+		
+		System.out.println(par);
 	}
 
 }
