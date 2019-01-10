@@ -34,11 +34,6 @@ public class Trapezio extends Quadrilateral {
 		
 	}
 	
-	public double calculaAltura() {
-		
-		return getCoordenadas()[0].getY() - getCoordenadas()[3].getY();
-		
-	}
 	
 	public double calculaArea() {
 		

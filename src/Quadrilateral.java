@@ -14,6 +14,12 @@ public class Quadrilateral {
 	public Ponto[] getCoordenadas() {
 		return coordenadas;
 	}
+	
+	public double calculaAltura() {
+		
+		return getCoordenadas()[0].getY() - getCoordenadas()[3].getY();
+		
+	}
 
 	private double calculaDistanciaEntrePontos(Ponto a, Ponto b) {
 		
