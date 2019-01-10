@@ -6,15 +6,21 @@ public class Trapezio extends Quadrilateral {
 
 	}
 	
+	public double calculaOutraBase() {
+		
+		return getCoordenadas()[2].getY() - getCoordenadas()[3].getY();
+		
+	}
+	
 	public double encontraBaseMenor() {
 		
-		if(calculaBase() < calculaDistanciaEntre2e3()) {
+		if(calculaBase() < calculaOutraBase()) {
 			
 			return calculaBase();
 			
 		}else{
 			
-			return calculaDistanciaEntre2e3();
+			return calculaOutraBase();
 			
 		}
 		
@@ -22,13 +28,13 @@ public class Trapezio extends Quadrilateral {
 	
 	public double encontraBaseMaior() {
 		
-		if(calculaBase() > calculaDistanciaEntre2e3()) {
+		if(calculaBase() > calculaOutraBase()) {
 			
 			return calculaBase();
 			
 		}else{
 			
-			return calculaDistanciaEntre2e3();
+			return calculaOutraBase();
 			
 		}
 		
