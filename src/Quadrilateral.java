@@ -21,35 +21,17 @@ public class Quadrilateral {
 		
 	}
 
-	private double calculaDistanciaEntrePontos(Ponto a, Ponto b) {
-		
-		return Math.sqrt(Math.pow((b.getX() - a.getX()), 2) + Math.pow((b.getY() - a.getY()), 2));
-		
-	}
-	
-	public double calculaDistanciaEntre0e1() {
-		
-		return calculaDistanciaEntrePontos(getCoordenadas()[0], getCoordenadas()[1]);
-		
-	}
-	
-	public double calculaDistanciaEntre1e2() {
-		
-		return calculaDistanciaEntrePontos(getCoordenadas()[1], getCoordenadas()[2]);
-		
-	}
 
-	public double calculaDistanciaEntre2e3() {
 	
-		return calculaDistanciaEntrePontos(getCoordenadas()[2], getCoordenadas()[3]);
-	
-	}
-
-	public double calculaDistanciaEntre3e0() {
+	public double calculaBase() {
 		
-		return calculaDistanciaEntrePontos(getCoordenadas()[3], getCoordenadas()[0]);
+		return Math.sqrt(
+				Math.pow((getCoordenadas()[2].getX() - getCoordenadas()[3].getX()), 2) + 
+				Math.pow((getCoordenadas()[2].getY() - getCoordenadas()[3].getY()), 2));
+		
 		
 	}
+	
 	
 	@Override
 	public String toString() {

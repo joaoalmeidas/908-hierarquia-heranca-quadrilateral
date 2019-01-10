@@ -7,14 +7,14 @@ public class Paralelograma extends Quadrilateral {
 	}
 	
 	public double calculaArea() {
-		return calculaDistanciaEntre0e1() * calculaAltura();
+		return calculaBase() * calculaAltura();
 	}
 	
 	@Override
 	public String toString() {
 		
 		return String.format("%s %nBase do Paralelograma: %.1f%nAltura do Paralelograma: %.1f%n%nArea do Paralelograma: %.1f", super.toString(),
-				calculaDistanciaEntre0e1(), calculaAltura(), calculaArea());
+				calculaBase(), calculaAltura(), calculaArea());
 		
 	}
 

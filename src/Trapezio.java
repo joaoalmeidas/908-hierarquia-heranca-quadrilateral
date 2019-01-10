@@ -8,9 +8,9 @@ public class Trapezio extends Quadrilateral {
 	
 	public double encontraBaseMenor() {
 		
-		if(calculaDistanciaEntre0e1() < calculaDistanciaEntre2e3()) {
+		if(calculaBase() < calculaDistanciaEntre2e3()) {
 			
-			return calculaDistanciaEntre0e1();
+			return calculaBase();
 			
 		}else{
 			
@@ -22,9 +22,9 @@ public class Trapezio extends Quadrilateral {
 	
 	public double encontraBaseMaior() {
 		
-		if(calculaDistanciaEntre0e1() > calculaDistanciaEntre2e3()) {
+		if(calculaBase() > calculaDistanciaEntre2e3()) {
 			
-			return calculaDistanciaEntre0e1();
+			return calculaBase();
 			
 		}else{
 			
