@@ -6,7 +6,9 @@ public class Paralelograma extends Quadrilateral {
 		
 	}
 	
-	
+	public double calculaArea() {
+		return calculaDistanciaEntre0e1() * calculaAltura();
+	}
 	
 
 }
