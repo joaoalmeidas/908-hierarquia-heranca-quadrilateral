@@ -15,19 +15,9 @@ public class Quadrilateral {
 		return coordenadas;
 	}
 
-	public void setCoordenadas(Ponto[] coordenadas) {
-		this.coordenadas = coordenadas;
-	}
-	
-	public int calculaDistanciaPonto0APonto1() {
+	public double calculaDistanciaEntrePontos(Ponto a, Ponto b) {
 		
-		return getCoordenadas()[1].getX() - getCoordenadas()[0].getX();
-		
-	}
-	
-	public int calculaDistanciaPonto2APonto3() {
-		
-		return getCoordenadas()[3].getX() - getCoordenadas()[2].getX();
+		return Math.sqrt(Math.pow((b.getX() - a.getX()), 2) + Math.pow((b.getY() - a.getY()), 2));
 		
 	}
 	
