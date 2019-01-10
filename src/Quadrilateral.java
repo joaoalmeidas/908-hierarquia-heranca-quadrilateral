@@ -11,6 +11,18 @@ public class Quadrilateral {
 		this.coordenadas[3] = tres;
 	}
 	
+	public Quadrilateral(Ponto zero, Ponto um, Ponto dois) {
+		
+		this.coordenadas[0] = zero;
+		this.coordenadas[1] = um;
+		this.coordenadas[2] = dois;
+		
+		dois.setX(dois.getX() - (um.getX() - zero.getX()));
+		
+		this.coordenadas[3] = dois;
+		
+	}
+	
 	public Ponto[] getCoordenadas() {
 		return coordenadas;
 	}
