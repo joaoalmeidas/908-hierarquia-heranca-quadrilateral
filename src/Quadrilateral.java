@@ -15,11 +15,36 @@ public class Quadrilateral {
 		return coordenadas;
 	}
 
-	public double calculaDistanciaEntrePontos(Ponto a, Ponto b) {
+	private double calculaDistanciaEntrePontos(Ponto a, Ponto b) {
 		
 		return Math.sqrt(Math.pow((b.getX() - a.getX()), 2) + Math.pow((b.getY() - a.getY()), 2));
 		
 	}
+	
+	public double calculaDistanciaEntre0e1() {
+		
+		return calculaDistanciaEntrePontos(getCoordenadas()[0], getCoordenadas()[1]);
+		
+	}
+	
+	public double calculaDistanciaEntre1e2() {
+		
+		return calculaDistanciaEntrePontos(getCoordenadas()[1], getCoordenadas()[2]);
+		
+	}
+
+	public double calculaDistanciaEntre2e3() {
+	
+		return calculaDistanciaEntrePontos(getCoordenadas()[2], getCoordenadas()[3]);
+	
+	}
+
+	public double calculaDistanciaEntre3e0() {
+		
+		return calculaDistanciaEntrePontos(getCoordenadas()[3], getCoordenadas()[0]);
+		
+	}
+	
 	
 
 }
