@@ -24,7 +24,14 @@ public class QuadrilateroTeste {
 		
 		System.out.println(par);
 		
+		a.alteraPonto(0, 0);
+		c.alteraPonto(2, 2);
 		
+		Retangulo ret = new Retangulo(a, c);
+		
+		System.out.println("\nRetângulo\n");
+		
+		System.out.println(ret);
 	}
 
 }
