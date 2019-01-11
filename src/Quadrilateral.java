@@ -13,13 +13,12 @@ public class Quadrilateral {
 	
 	public Quadrilateral(Ponto zero, Ponto um, Ponto dois) {
 		
+		Ponto tres = new Ponto(um.getX() - zero.getX() - dois.getX(), dois.getY());
+		
 		this.coordenadas[0] = zero;
 		this.coordenadas[1] = um;
 		this.coordenadas[2] = dois;
-		
-		dois.setX(dois.getX() - (um.getX() - zero.getX()));
-		
-		this.coordenadas[3] = dois;
+		this.coordenadas[3] = tres;
 		
 	}
 	
