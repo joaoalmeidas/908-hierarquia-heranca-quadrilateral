@@ -22,6 +22,18 @@ public class Quadrilateral {
 		
 	}
 	
+	public Quadrilateral(Ponto zero, Ponto dois) {
+		
+		Ponto um = new Ponto(zero.getY(), dois.getX()); 
+		Ponto tres = new Ponto(zero.getX(), dois.getY());
+		
+		this.coordenadas[0] = zero;
+		this.coordenadas[1] = um;
+		this.coordenadas[2] = dois;
+		this.coordenadas[3] = tres;
+		
+	}
+	
 	public Ponto[] getCoordenadas() {
 		return coordenadas;
 	}
@@ -37,7 +49,6 @@ public class Quadrilateral {
 	public double calculaBase() {
 		
 		return getCoordenadas()[2].getX() - getCoordenadas()[3].getX();
-		
 		
 	}
 	
