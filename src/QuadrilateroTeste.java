@@ -14,9 +14,9 @@ public class QuadrilateroTeste {
 		
 		System.out.println(trap);
 		
-		a.alteraPonto(1, 6);
-		b.alteraPonto(5, 6);
-		c.alteraPonto(4, 0);
+		a.alteraPonto(1, 7);
+		b.alteraPonto(5, 7);
+		c.alteraPonto(7, 0);
 		
 		Paralelograma par = new Paralelograma(a, b, c);
 		
