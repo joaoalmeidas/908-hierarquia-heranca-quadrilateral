@@ -28,7 +28,7 @@ public class Quadrilateral {
 	
 	public double calculaAltura() {
 		
-		return getCoordenadas()[0].getY() - getCoordenadas()[3].getY();
+		return getCoordenadas()[0].getY() - getCoordenadas()[2].getY();
 		
 	}
 
@@ -36,9 +36,7 @@ public class Quadrilateral {
 	
 	public double calculaBase() {
 		
-		return Math.sqrt(
-				Math.pow((getCoordenadas()[2].getX() - getCoordenadas()[3].getX()), 2) + 
-				Math.pow((getCoordenadas()[2].getY() - getCoordenadas()[3].getY()), 2));
+		return getCoordenadas()[2].getX() - getCoordenadas()[3].getX();
 		
 		
 	}

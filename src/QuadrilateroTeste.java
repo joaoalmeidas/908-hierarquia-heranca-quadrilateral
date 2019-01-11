@@ -23,6 +23,8 @@ public class QuadrilateroTeste {
 		System.out.println("\nParalelograma\n");
 		
 		System.out.println(par);
+		
+		
 	}
 
 }
