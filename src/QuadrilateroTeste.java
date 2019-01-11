@@ -32,6 +32,15 @@ public class QuadrilateroTeste {
 		System.out.println("\nRetângulo\n");
 		
 		System.out.println(ret);
+		
+		a.alteraPonto(9, 9);
+		c.alteraPonto(20, 20);
+		
+		Quadrado quad = new Quadrado(a, c);
+		
+		System.out.println("\nQuadrado\n");
+		
+		System.out.println(quad);
 	}
 
 }
