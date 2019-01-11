@@ -5,6 +5,10 @@ public class Paralelograma extends Quadrilateral {
 		super(zero, um, dois);
 	}
 	
+	public Paralelograma(Ponto zero, Ponto dois) {
+		super(zero, dois);
+	}
+	
 	public double calculaArea() {
 		return calculaBase() * calculaAltura();
 	}
