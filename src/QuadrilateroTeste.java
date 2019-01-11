@@ -25,7 +25,7 @@ public class QuadrilateroTeste {
 		System.out.println(par);
 		
 		a.alteraPonto(0, 0);
-		c.alteraPonto(2, 2);
+		c.alteraPonto(9, 2);
 		
 		Retangulo ret = new Retangulo(a, c);
 		
