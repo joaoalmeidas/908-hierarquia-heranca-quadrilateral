@@ -16,8 +16,9 @@ public class Paralelograma extends Quadrilateral {
 	@Override
 	public String toString() {
 		
-		return String.format("%s %nBase do Paralelograma: %.1f%nAltura do Paralelograma: %.1f%n%nArea do Paralelograma: %.1f", super.toString(),
-				calculaBase(), calculaAltura(), calculaArea());
+		return String.format("%s %nBase do %s: %.1f%nAltura do %s: %.1f%n%nArea do %s: %.1f", super.toString(),
+				getClass().getSimpleName(),
+				calculaBase(), getClass().getSimpleName(), calculaAltura(), getClass().getSimpleName(), calculaArea());
 		
 	}
 
