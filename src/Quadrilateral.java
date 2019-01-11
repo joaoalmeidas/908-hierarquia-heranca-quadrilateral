@@ -40,15 +40,14 @@ public class Quadrilateral {
 	
 	public double calculaAltura() {
 		
-		return getCoordenadas()[0].getY() - getCoordenadas()[2].getY();
+		return Math.abs(getCoordenadas()[0].getY() - getCoordenadas()[2].getY());
 		
 	}
 
 
-	
 	public double calculaBase() {
 		
-		return getCoordenadas()[2].getX() - getCoordenadas()[3].getX();
+		return Math.abs(getCoordenadas()[2].getX() - getCoordenadas()[3].getX());
 		
 	}
 	

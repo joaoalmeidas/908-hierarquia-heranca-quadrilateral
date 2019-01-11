@@ -8,7 +8,7 @@ public class Trapezio extends Quadrilateral {
 	
 	public double calculaOutraBase() {
 		
-		return getCoordenadas()[1].getX() - getCoordenadas()[0].getX();
+		return Math.abs(getCoordenadas()[1].getX() - getCoordenadas()[0].getX());
 		
 	}
 	
