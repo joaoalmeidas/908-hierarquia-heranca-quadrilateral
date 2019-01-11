@@ -57,7 +57,7 @@ public class Quadrilateral {
 	public String toString() {
 		
 		return String.format("%s: %n(%d, %d), (%d, %d), (%d, %d), (%d, %d)",
-							"Pontos do Quadrilatero",
+							("Pontos do ")+getClass().getSimpleName(),
 							getCoordenadas()[0].getX(), getCoordenadas()[0].getY(),
 							getCoordenadas()[1].getX(), getCoordenadas()[1].getY(),
 							getCoordenadas()[2].getX(), getCoordenadas()[2].getY(),
